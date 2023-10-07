@@ -48,7 +48,7 @@ const Header = () => {
               {navBar}
             </ul>
           </div>
-          <a className="btn btn-ghost font-atony font-bold normal-case text-[#0a2c3d]  text-[1.4rem]">
+          <a className="btn btn-ghost font-anton font-bold normal-case text-[#0a2c3d]  text-[1.4rem]">
             HouseR
           </a>
         </div>

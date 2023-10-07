@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
 /* atony font */
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,4 +14,25 @@
   html {
     font-family: "poppins";
   }
+
 }
+  /*
+@layer base {
+  body {
+    max-width: 1536px;
+  }
+}
+@layer components {
+  .desktop {
+    @apply max-w-screen-2xl;
+  }
+  .laptop {
+    @apply max-w-screen-lg;
+  }
+  .tablet {
+    @apply max-w-screen-md;
+  }
+  .mobile {
+    @apply max-w-screen-sm;
+  }
+} */

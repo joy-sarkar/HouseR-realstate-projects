@@ -2,13 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily:{
-      poppins:['Poppins','sans-serif']
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
     },
     extend: {
-      fontFamily:{
-        atony:['Anton', 'sans-serif'],
-      }
+      fontFamily: {
+        anton: ["Anton", "sans-serif"],
+      },
     },
   },
   plugins: [require("daisyui")],
