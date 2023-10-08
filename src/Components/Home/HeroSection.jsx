@@ -4,7 +4,7 @@ import "swiper/css/navigation";
 // import "./styles.css";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import {IoHome} from "react-icons/io5";
-import { SliderData } from "../static";
+import { SliderData } from "..";
 import { Autoplay, Navigation } from "swiper/modules";
 const HeroSection = () => {
   // lg:max-w-screen-2xl
@@ -25,16 +25,17 @@ const HeroSection = () => {
           }}
         >
           {SliderData.map((item) => (
+            // console.log("unick id",item.id)
             <div key={item.id}>
               {/* h-4/5 */}
-              <SwiperSlide className="relative ">
+              <SwiperSlide key={item.id} className="relative ">
                 <div className="px-[2rem]">
                   <div>
                     <div className="absolute top-[9rem] left-[8.8rem] flex ">
                       <IoHome style={{ color: "#ff5a3c" }}/>
                     <p className="ml-2 text-[#ff5a3c]">{item.topTitle}</p>
                     </div>
-                    <h2 className="text-[2.8rem] w-[27rem] font-black	text-[#071c1f] absolute top-[10rem] left-[8.6rem] text-wrap">
+                    <h2 className="text-[2.8rem] w-[27rem] font-md	text-[#071c1f] font-anton absolute top-[11rem] left-[8.6rem] text-wrap">
                       {item.title}
                     </h2>
                     <p className="absolute text-[#ff5a3c] text-md top-[20rem] w-[28rem] left-[8.6rem]">{item.subTitle}</p>
