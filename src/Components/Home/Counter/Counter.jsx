@@ -49,7 +49,7 @@ function Counter({ area, apartment, construction, room }) {
     return () => {
       clearInterval(constructionCounter);
     };
-  }, [totalApartment, apartment]);
+  }, [totalConstruction, construction]);
   //   Rooms Counter
   useEffect(() => {
     let roomCounter;
@@ -66,7 +66,7 @@ function Counter({ area, apartment, construction, room }) {
   }, [totalRoom, room]);
 
   return (
-    <section className="bg-[#f2f6f7] px-16">
+    <section className="bg-[#fff] px-16">
       <div className="counterContent md:flex justify-between py-20">
         <div className="flex flex-col justify-center items-center">
           <BiArea color="#ff5a3c" size={26} />
