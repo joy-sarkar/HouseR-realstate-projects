@@ -1,5 +1,6 @@
 import { aboutData } from "..";
 import about_img from "../../assets/about_section_Img.jpg";
+import { FaRegHandPointRight } from "react-icons/fa6";
 import { sellProperty } from "../index";
 const About = () => {
   //   console.log("Inside data", aboutData[0].microFeature);
@@ -18,15 +19,18 @@ const About = () => {
             <p className="text-sm text-[#ff5a3c] bg-[#e2766338] w-20 p-2 rounded-md font-semibold mt-8">
               {aboutData[0].topTitle}
             </p>
-            <h1 className="text-[2.9rem] font-black font-anton text-[#071c1f]">
+            <h1 className="text-[2.5rem]  font-bold text-[#071c1f]">
               {aboutData[0].title}
             </h1>
             <p>{aboutData[0].subTitle}</p>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 p-3 mt-2">
               {aboutData[0].microFeature.map((item) => (
                 <div key={item.id}>
-                  <div>{item.icon}</div>
-                  <p className="text-[#071c1f]">{item.text}</p>
+                  <div className="flex items-center">
+                    <FaRegHandPointRight color="#ff5a3c" size={20} />
+                    <p className="text-[#071c1f] p-2 ">{item.text}</p>
+                    <button>{item.btnText}</button>
+                  </div>
                 </div>
               ))}
             </div>

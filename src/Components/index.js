@@ -2,9 +2,9 @@ import img1 from "../../src/assets/slider1.png";
 import img2 from "../../src/assets/slider2 .png";
 import img3 from "../../src/assets/slider3.png";
 import img4 from "../../src/assets/slider4.png";
-import featureImg from '../assets/cover 0122.jpg'
+import featureImg from "../assets/cover 0122.jpg";
 // react icon
-// import { TbHomeHeart } from "react-icons/tb";
+import { TbHomeHeart } from "react-icons/tb";
 // data for hero slider
 export const SliderData = [
   {
@@ -48,7 +48,12 @@ export const aboutData = [
     title: "The Leading Real Estate Rental Marketplace",
     subTitle:
       "Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage, combined with specialist services",
-    microFeature: [{ id: 1, text: "Smart Home Design", icon: 1 }],
+    microFeature: [
+      { id: 1, text: "Smart Home Design" },
+      { id: 2, text: "Beautiful Scene Around" },
+      { id: 3, text: "Exceptional Lifestyle" },
+      { id: 4, text: "Complete 24/7 Security" },
+    ],
   },
 ];
 export const sellProperty = [
@@ -56,7 +61,7 @@ export const sellProperty = [
     title: "Today Sells Properties",
     subtitle:
       "HouseR allow you to design unlimited panels and real estate custom forms to capture leads and keep record of all information",
-      imgUrl: featureImg,
+    imgUrl: featureImg,
     facilities: [
       { id: 1, title: "Live Music Concerts at Luviana" },
       { id: 2, title: "Our SecretIsland Boat Tour is Just for You" },
@@ -72,20 +77,23 @@ export const sellProperty = [
   },
 ];
 // service main focus
-export const services =[
-  {id:1,
+export const services = [
+  {
+    id: 1,
     title: "Buy a House",
-    text:"over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
-    btnText:"Buy a House"
+    text: "over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
+    btnText: "Buy a House",
   },
-  {id:1,
+  {
+    id: 1,
     title: "Rent a House",
-    text:"over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
-    btnText:"Rent a House"
+    text: "over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
+    btnText: "Rent a House",
   },
-  {id:1,
+  {
+    id: 1,
     title: "Sell a House",
-    text:"over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
-    btnText:"Sell a House"
-  }
-]
+    text: "over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
+    btnText: "Sell a House",
+  },
+];

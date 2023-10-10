@@ -35,7 +35,7 @@ const HeroSection = () => {
                       <IoHome style={{ color: "#ff5a3c" }}/>
                     <p className="ml-2 text-[#ff5a3c]">{item.topTitle}</p>
                     </div>
-                    <h2 className="text-[2.8rem] w-[27rem] font-md	text-[#071c1f] font-anton absolute top-[11rem] left-[8.6rem] text-wrap">
+                    <h2 className="text-[2.8rem] w-[27rem] font-md	text-[#071c1f] font-bold absolute top-[11rem] left-[8.6rem] text-wrap">
                       {item.title}
                     </h2>
                     <p className="absolute text-[#ff5a3c] text-md top-[20rem] w-[28rem] left-[8.6rem]">{item.subTitle}</p>
