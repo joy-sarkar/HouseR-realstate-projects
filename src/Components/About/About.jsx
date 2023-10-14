@@ -27,7 +27,7 @@ const About = () => {
               {aboutData[0].microFeature.map((item) => (
                 <div key={item.id}>
                   <div className="flex items-center">
-                    <FaRegHandPointRight color="#ff5a3c" size={20} />
+                    <item.icon className="-[#071c1f]" color="#ff5a3c" size={22}  />
                     <p className="text-[#071c1f] p-2 ">{item.text}</p>
                     <button>{item.btnText}</button>
                   </div>

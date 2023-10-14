@@ -3,8 +3,20 @@ import img2 from "../../src/assets/slider2 .png";
 import img3 from "../../src/assets/slider3.png";
 import img4 from "../../src/assets/slider4.png";
 import featureImg from "../assets/cover 0122.jpg";
+import featueImg1 from "../assets/featueImg1.jpg";
+import featueImg2 from "../assets/featueImg2.jpg";
+import featueImg3 from "../assets/featueImg3.jpg";
+import featueImg4 from "../assets/featueImg4.jpg";
+import featueImg5 from "../assets/featueImg5.jpg";
 // react icon
 import { TbHomeHeart } from "react-icons/tb";
+import { MdSecurity,MdOutlineSecurity } from "react-icons/md";
+import { RiUserHeartLine } from "react-icons/ri";
+import { GiHills } from "react-icons/gi";
+import { AiFillCar } from "react-icons/ai";
+import { BiLibrary } from "react-icons/bi";
+import { RiHomeHeartLine } from "react-icons/ri";
+import { FaSwimmingPool,FaHandHoldingMedical } from "react-icons/fa";
 // data for hero slider
 export const SliderData = [
   {
@@ -49,10 +61,10 @@ export const aboutData = [
     subTitle:
       "Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage, combined with specialist services",
     microFeature: [
-      { id: 1, text: "Smart Home Design" },
-      { id: 2, text: "Beautiful Scene Around" },
-      { id: 3, text: "Exceptional Lifestyle" },
-      { id: 4, text: "Complete 24/7 Security" },
+      { id: 1, text: "Smart Home Design", icon: TbHomeHeart },
+      { id: 2, text: "Beautiful Scene Around", icon: GiHills },
+      { id: 3, text: "Exceptional Lifestyle", icon: RiUserHeartLine },
+      { id: 4, text: "Complete 24/7 Security", icon: MdSecurity },
     ],
   },
 ];
@@ -83,17 +95,134 @@ export const services = [
     title: "Buy a House",
     text: "over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
     btnText: "Buy a House",
+    imgurl: "https://quarter-nextjs.netlify.app/img/icons/icon-img/21.png",
   },
   {
     id: 1,
     title: "Rent a House",
     text: "over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
     btnText: "Rent a House",
+    imgurl: "https://quarter-nextjs.netlify.app/img/icons/icon-img/22.png",
   },
   {
     id: 1,
     title: "Sell a House",
     text: "over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.",
     btnText: "Sell a House",
+    imgurl: "https://quarter-nextjs.netlify.app/img/icons/icon-img/23.png",
+  },
+];
+// Featured Listings
+export const featuredList = [
+  {
+    id: 1,
+    price: 69,
+    category: "For sale",
+    location: "New York",
+    title: "Luxury villa in rego Park",
+    imgURL: featueImg1,
+    features: [
+      { quantity: 2, names: "Bedrooms" },
+      { quantity: 2, names: "Bathrooms" },
+      { quantity: 2560, names: "Square Ft" },
+    ],
+  },
+  {
+    id: 2,
+    price: 69,
+    category: "For sale",
+    location: "New York",
+    title: "Luxury villa in rego Park",
+    imgURL: featueImg2,
+    features: [
+      { quantity: 2, names: "Bedrooms" },
+      { quantity: 2, names: "Bathrooms" },
+      { quantity: 2560, names: "Square Ft" },
+    ],
+  },
+  {
+    id: 3,
+    price: 69,
+    category: "For sale",
+    location: "New York",
+    title: "Luxury villa in rego Park",
+    imgURL: featueImg3,
+    features: [
+      { quantity: 2, names: "Bedrooms" },
+      { quantity: 2, names: "Bathrooms" },
+      { quantity: 2560, names: "Square Ft" },
+    ],
+  },
+  {
+    id: 4,
+    price: 69,
+    category: "For sale",
+    location: "New York",
+    title: "Luxury villa in rego Park",
+    imgURL: featueImg4,
+    features: [
+      { quantity: 2, names: "Bedrooms" },
+      { quantity: 2, names: "Bathrooms" },
+      { quantity: 2560, names: "Square Ft" },
+    ],
+  },
+  {
+    id: 5,
+    price: 69,
+    category: "For sale",
+    location: "New York",
+    title: "Luxury villa in rego Park",
+    imgURL: featueImg5,
+    features: [
+      { quantity: 2, names: "Bedrooms" },
+      { quantity: 2, names: "Bathrooms" },
+      { quantity: 2560, names: "Square Ft" },
+    ],
+  },
+  {
+    id: 6,
+    price: 69,
+    category: "For sale",
+    location: "New York",
+    title: "Luxury villa in rego Park",
+    imgURL: featueImg1,
+    features: [
+      { quantity: 2, names: "Bedrooms" },
+      { quantity: 2, names: "Bathrooms" },
+      { quantity: 2560, names: "Square Ft" },
+    ],
+  },
+];
+
+export const Amenities = [
+  {
+    id: 1,
+    title: "Parking Space",
+    icon: AiFillCar,
+  },
+  {
+    id: 2,
+    title: "Swimming Pool",
+    icon: FaSwimmingPool,
+  },
+  {
+    id: 3,
+    title: "Private Security",
+    icon: MdOutlineSecurity,
+  },
+  {
+    id: 4,
+    title: "Medical Center",
+    icon: FaHandHoldingMedical,
+  },
+  {
+    id: 5,
+    title: "Library Area",
+    icon: BiLibrary,
+  },
+  {
+    id: 6,
+    title: "Smart Home",
+    icon: RiHomeHeartLine,
   },
 ];
