@@ -226,3 +226,10 @@ export const Amenities = [
     icon: RiHomeHeartLine,
   },
 ];
+
+// data for call to action section
+export const ctaData ={
+  title:"Looking for a dream home?",
+  subtext:"We can help you realize your dream of a new home",
+  btnText:"Explore Properties"
+}

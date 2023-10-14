@@ -1,5 +1,6 @@
 import About from "../About/About";
 import Aminities from "../Aminities/Aminities";
+import CTA from "../CTA/CTA";
 import FeatureItem from "../Services/FeatureItem/FeatureItem";
 import Services from "../Services/Services";
 import Counter from "./Counter/Counter";
@@ -13,6 +14,7 @@ const Home = () => {
       <Services/>
       <FeatureItem/>
       <Aminities/>
+      <CTA/>
     </div>
   );
 };

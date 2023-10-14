@@ -1,6 +1,6 @@
 import { aboutData } from "..";
 import about_img from "../../assets/about_section_Img.jpg";
-import { FaRegHandPointRight } from "react-icons/fa6";
+// import { FaRegHandPointRight } from "react-icons/fa6";
 import { sellProperty } from "../index";
 const About = () => {
   //   console.log("Inside data", aboutData[0].microFeature);
@@ -27,7 +27,11 @@ const About = () => {
               {aboutData[0].microFeature.map((item) => (
                 <div key={item.id}>
                   <div className="flex items-center">
-                    <item.icon className="-[#071c1f]" color="#ff5a3c" size={22}  />
+                    <item.icon
+                      className="-[#071c1f]"
+                      color="#ff5a3c"
+                      size={22}
+                    />
                     <p className="text-[#071c1f] p-2 ">{item.text}</p>
                     <button>{item.btnText}</button>
                   </div>
@@ -41,7 +45,7 @@ const About = () => {
         </div>
       </section>
       <section className="bg-[#f2f6f7] py-8">
-        <div className="flex px-[2rem]">
+        <div className=" md:flex px-[2rem]">
           <div className="w-[38rem] px-16">
             <h1 className="text-[2.5rem] text-[#071c1f] font-bold mt-24">
               {sellProperty[0].title}
@@ -54,9 +58,9 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <div className="pb-4 flex justify-center text-center">
+            <div className="pb-4 flex justify-center text-center [&>*:nth-child(4)]:border-none">
               {sellProperty[0].features.map((item) => (
-                <div className="p-4" key={item.id}>
+                <div className="p-4 border-r-2" key={item.id}>
                   <p className=" pt-4">{item.title1}</p>
                   <p className=" pt-4">{item.title}</p>
                 </div>
