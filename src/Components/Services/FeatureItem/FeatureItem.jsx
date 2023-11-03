@@ -18,11 +18,30 @@ const FeatureItem = () => {
       <div>
         <Swiper
           modules={[Navigation, Autoplay]}
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={20}
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
+          }}
+          breakpoints={{
+            // when window width is >= 640px
+            // 640: {
+            //   width: 768,
+            //   slidesPerView: 3,
+            // },
+            // when window width is >= 768px
+            768: {
+              // width: 768,
+              slidesPerView: 3,
+              spaceBetween:10
+            },
+            // for mobile devices
+            // 480: {
+            //   // width: 768,
+            //   slidesPerView: 2,
+            //   spaceBetween:15
+            // },
           }}
           //   add moro module for more functionality
           className="mySwiper2"

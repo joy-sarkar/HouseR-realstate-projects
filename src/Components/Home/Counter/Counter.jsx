@@ -68,28 +68,28 @@ function Counter({ area, apartment, construction, room }) {
   return (
     <section className="bg-[#fff] px-16">
       <div className="counterContent md:flex justify-between py-20">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center max-md:p-8 items-center">
           <BiArea color="#ff5a3c" size={26} />
           <h1 className="font-extrabold text-4xl text-[#181717]">
             {totalArea}+
           </h1>
           <h3 className="font-bold text-2xl">Total Area Sq</h3>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center max-md:p-8 items-center">
           <BsBuildings color="#ff5a3c" size={26} />
           <h1 className="font-extrabold text-4xl text-[#181717]">
             {totalApartment}+
           </h1>
           <h3 className="font-bold text-2xl">Apartments Sold</h3>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center max-md:p-8 max-md:text-center items-center">
           <BsBuildingAdd  color="#ff5a3c" size={30} />
           <h1 className="font-extrabold text-4xl text-[#181717]">
             {totalConstruction}+
           </h1>
           <h3 className="font-bold text-2xl">Total Constructions</h3>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center max-md:p-8 items-center">
           <SiGoogleclassroom color="#ff5a3c" size={26} />
           <h1 className="font-extrabold text-4xl text-[#181717]">
             {totalRoom}+

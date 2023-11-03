@@ -2,7 +2,7 @@ import { services } from "../index";
 import { BiRightArrowAlt } from "react-icons/bi";
 const Services = () => {
   return (
-    <section className="bg-[#f2f6f7] py-24">
+    <section id="service" className="bg-[#f2f6f7] py-24">
       <div>
         <div className="flex justify-center">
           <p className="text-center rounded-lg py-2 px-4  text-[#ff5a3c] bg-[#ff593c3f] w-28">
@@ -15,7 +15,7 @@ const Services = () => {
         <div className="md:px-16 flex max-md:flex-col">
           {services.map((item) => (
             <div
-              className="w-[24rem] flex flex-col justify-center items-center drop-shadow-md p-8 bg-[#ffffff] m-1 "
+              className="lg:w-[24rem] flex flex-col justify-center items-center drop-shadow-md p-8 bg-[#ffffff] m-1 "
               key={item.id}
             >
               <div>
